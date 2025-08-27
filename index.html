@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sa'adat's PurePantry - Bringing the market closer to you</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fresh-green': '#2E7D32',
+                        'earth-brown': '#A47551',
+                        'soft-beige': '#F5E1C0',
+                        'golden-yellow': '#F4B400'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .basket-pattern {
+            background-image: radial-gradient(circle at 20% 80%, rgba(244, 180, 0, 0.1) 0%, transparent 50%),
+                              radial-gradient(circle at 80% 20%, rgba(46, 125, 50, 0.1) 0%, transparent 50%);
+        }
+        /* Optional: constrain logo images */
+        .brand-logo { height: 40px; width: auto; }
+        .brand-logo-lg { height: 56px; width: auto; }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <!-- Replaced initial letter badge with real logo -->
+                    <img src="https://i.ibb.co/hF2SWHPC/1755806563359o12uz7wc.png" alt="Sa’adat’s PurePantry logo" class="brand-logo object-contain" loading="eager" fetchpriority="high">
+                    <span class="text-fresh-green font-semibold text-xl">Sa'adat's PurePantry</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-fresh-green transition-colors">About</a>
+                    <a href="#products" class="text-gray-700 hover:text-fresh-green transition-colors">Products</a>
+                    <a href="#why-us" class="text-gray-700 hover:text-fresh-green transition-colors">Why Choose Us</a>
+                    <a href="#contact" class="text-gray-700 hover:text-fresh-green transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-soft-beige to-white py-20 basket-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <!-- Added logo near heading for brand recall on mobile -->
+                    <img src="https://i.ibb.co/hF2SWHPC/1755806563359o12uz7wc.png" alt="Sa’adat’s PurePantry logo" class="brand-logo-lg object-contain mx-auto lg:mx-0 mb-4" loading="lazy">
+                    <h1 class="text-5xl lg:text-6xl font-bold text-fresh-green mb-6">
+                        Sa'adat's<br>
+                        <span class="text-earth-brown">PurePantry</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 font-medium">
+                        Bringing the market closer to you
+                    </p>
+                    <p class="text-lg text-gray-500 mb-10 max-w-lg">
+                        Fresh, quality foodstuffs delivered with care. From premium rice and beans to essential cooking ingredients - we bring the best of the market to your doorstep.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" 
+                                class="bg-fresh-green text-white px-8 py-4 rounded-full font-semibold hover:bg-green-700 transition-colors shadow-lg">
+                            Order Now
+                        </button>
+                        <button onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})" 
+                                class="border-2 border-earth-brown text-earth-brown px-8 py-4 rounded-full font-semibold hover:bg-earth-brown hover:text-white transition-colors">
+                            View Products
+                        </button>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <img src="https://i.ibb.co/hF2SWHPC/1755806563359o12uz7wc.png" alt="Sa’adat’s PurePantry Logo" class="mx-auto w-64 h-auto drop-shadow-lg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-fresh-green mb-6">About Sa'adat's PurePantry</h2>
+                <div class="w-24 h-1 bg-golden-yellow mx-auto mb-8"></div>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        At Sa'adat's PurePantry, we believe that quality food is the foundation of every great meal. Founded with a passion for bringing fresh, authentic foodstuffs directly from trusted sources to your kitchen.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        We specialize in premium rice varieties, fresh beans, essential cooking oils, farm-fresh yams, and carefully selected spices. Every product is handpicked to ensure you receive only the finest quality ingredients.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Our mission is simple: to make quality foodstuffs accessible and convenient for busy professionals, families, and food enthusiasts who value freshness and authenticity.
+                    </p>
+                </div>
+                <div class="bg-soft-beige rounded-3xl p-8 text-center">
+                    <div class="text-6xl mb-4">🌾</div>
+                    <h3 class="text-2xl font-semibold text-fresh-green mb-4">Our Promise</h3>
+                    <p class="text-gray-600">
+                        Fresh ingredients, fair prices, and reliable delivery. We're committed to bringing the best of the market directly to you with the care and quality you deserve.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Products Section -->
+<section id="products" class="py-20 bg-soft-beige">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-fresh-green mb-6">Our Fresh Products</h2>
+      <div class="w-24 h-1 bg-golden-yellow mx-auto mb-8"></div>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Discover our carefully curated selection of premium foodstuffs, sourced fresh and delivered with care.
+      </p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Rice -->
+      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+        <div class="mb-4 -mx-8 -mt-8">
+          <img src="https://media.istockphoto.com/id/1270226788/photo/close-up-rice-grain-basmati-rice-food-background-healthy-food.jpg?s=612x612&w=0&k=20&c=JbrA_uK07OmIePdE6w6xmi4eOVWEjZSHMF25yKPCCJM=" alt="Premium Rice" class="w-full h-48 object-cover rounded-t-2xl shadow-md">
+        </div>
+        <h3 class="text-xl font-semibold text-fresh-green mb-3 text-center">Premium Rice</h3>
+        <p class="text-gray-600 text-center mb-4">
+          Long grain, short grain, jasmine, and basmati rice varieties. Always fresh and properly stored.
+        </p>
+        <div class="text-center">
+          <span class="inline-block bg-golden-yellow text-white px-4 py-2 rounded-full text-sm font-medium">
+            Multiple Varieties
+          </span>
+        </div>
+      </div>
+
+      <!-- Beans -->
+      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+        <div class="mb-4 -mx-8 -mt-8">
+          <img src="https://i.ibb.co/4ZPRw1KY/seeds.jpg" alt="Fresh Beans" class="w-full h-48 object-cover rounded-t-2xl shadow-md">
+        </div>
+        <h3 class="text-xl font-semibold text-fresh-green mb-3 text-center">Fresh Beans</h3>
+        <p class="text-gray-600 text-center mb-4">
+          Black beans, brown beans, white beans, and kidney beans. Cleaned and ready for cooking.
+        </p>
+        <div class="text-center">
+          <span class="inline-block bg-earth-brown text-white px-4 py-2 rounded-full text-sm font-medium">
+            Farm Fresh
+          </span>
+        </div>
+      </div>
+
+      <!-- Cooking Oil -->
+      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+        <div class="mb-4 -mx-8 -mt-8">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpPdBrX4K7vXFd6obhQ_Q4EN3QF8CzWS4p6SOtJHmUfEN4LXrH9qrRkscX_Xw3PeHUXNs&usqp=CAU" alt="Cooking Oils" class="w-full h-48 object-cover rounded-t-2xl shadow-md">
+        </div>
+        <h3 class="text-xl font-semibold text-fresh-green mb-3 text-center">Cooking Oils</h3>
+        <p class="text-gray-600 text-center mb-4">
+          Palm oil, vegetable oil, groundnut oil, and olive oil. Pure and unrefined options available.
+        </p>
+        <div class="text-center">
+          <span class="inline-block bg-golden-yellow text-white px-4 py-2 rounded-full text-sm font-medium">
+            Pure Quality
+          </span>
+        </div>
+      </div>
+
+      <!-- Yam -->
+      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+        <div class="mb-4 -mx-8 -mt-8">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHKZmx8yPUTBPP0yv7DCuFLQ9nQxuvvdkjNg&s" alt="Fresh Yams" class="w-full h-48 object-cover rounded-t-2xl shadow-md">
+        </div>
+        <h3 class="text-xl font-semibold text-fresh-green mb-3 text-center">Fresh Yams</h3>
+        <p class="text-gray-600 text-center mb-4">
+          White yam, water yam, and sweet potatoes. Carefully selected for freshness and quality.
+        </p>
+        <div class="text-center">
+          <span class="inline-block bg-earth-brown text-white px-4 py-2 rounded-full text-sm font-medium">
+            Hand Selected
+          </span>
+        </div>
+      </div>
+
+      <!-- Spices -->
+      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+        <div class="mb-4 -mx-8 -mt-8">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_AWwX3DQKnnOq0t8r63BvVcAaJOGhNJ1thQ&s" alt="Spices & Seasonings" class="w-full h-48 object-cover rounded-t-2xl shadow-md">
+        </div>
+        <h3 class="text-xl font-semibold text-fresh-green mb-3 text-center">Spices & Seasonings</h3>
+        <p class="text-gray-600 text-center mb-4">
+          Pepper, ginger, garlic, curry, thyme, and traditional spice blends for authentic flavors.
+        </p>
+        <div class="text-center">
+          <span class="inline-block bg-golden-yellow text-white px-4 py-2 rounded-full text-sm font-medium">
+            Authentic Blends
+          </span>
+        </div>
+      </div>
+
+      <!-- Grains -->
+      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+        <div class="mb-4 -mx-8 -mt-8">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQedkiiN2X_xL38bJunfKi8G4o6lBdbVn716g&s" alt="Whole Grains" class="w-full h-48 object-cover rounded-t-2xl shadow-md">
+        </div>
+        <h3 class="text-xl font-semibold text-fresh-green mb-3 text-center">Whole Grains</h3>
+        <p class="text-gray-600 text-center mb-4">
+          Millet, sorghum, corn, and wheat. Nutritious whole grains for healthy, hearty meals.
+        </p>
+        <div class="text-center">
+          <span class="inline-block bg-earth-brown text-white px-4 py-2 rounded-full text-sm font-medium">
+            Nutrient Rich
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-fresh-green mb-6">Why Choose Sa'adat's PurePantry?</h2>
+                <div class="w-24 h-1 bg-golden-yellow mx-auto mb-8"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-soft-beige to-white">
+                    <div class="w-16 h-16 bg-fresh-green rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">✓</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-fresh-green mb-4">Trusted Quality</h3>
+                    <p class="text-gray-600">
+                        Every product is carefully inspected and sourced from reliable suppliers. We guarantee freshness and quality in every order.
+                    </p>
+                </div>
+
+                <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-soft-beige to-white">
+                    <div class="w-16 h-16 bg-golden-yellow rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">🚚</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-fresh-green mb-4">Convenient Delivery</h3>
+                    <p class="text-gray-600">
+                        Skip the market trips. We deliver fresh foodstuffs directly to your location, saving you time and effort.
+                    </p>
+                </div>
+
+                <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-soft-beige to-white">
+                    <div class="w-16 h-16 bg-earth-brown rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">💰</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-fresh-green mb-4">Fair Pricing</h3>
+                    <p class="text-gray-600">
+                        Competitive prices without compromising quality. We believe good food should be accessible to everyone.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-fresh-green rounded-3xl p-8 text-center text-white">
+                <h3 class="text-2xl font-semibold mb-4">Perfect for Busy Professionals</h3>
+                <p class="text-lg opacity-90 max-w-3xl mx-auto">
+                    Whether you're a busy colleague looking for quality ingredients or planning meals for the week, 
+                    Sa'adat's PurePantry makes it easy to access fresh, authentic foodstuffs without the hassle of market visits.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-soft-beige">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-fresh-green mb-6">Ready to Order?</h2>
+                <div class="w-24 h-1 bg-golden-yellow mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600">
+                    Get in touch with us to place your order or ask any questions about our products.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-xl font-semibold text-fresh-green mb-6">Send us a message</h3>
+                    <form class="space-y-4" onsubmit="handleFormSubmit(event)">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-fresh-green focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-fresh-green focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">What would you like to order?</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-fresh-green focus:border-transparent" placeholder="Please list the items and quantities you need..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-fresh-green text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                            Send Order Request
+                        </button>
+                    </form>
+                </div>
+
+                <!-- WhatsApp Contact -->
+                <div class="space-y-8">
+                    <div class="bg-white rounded-2xl p-8 shadow-lg text-center">
+                        <div class="text-4xl mb-4">📱</div>
+                        <h3 class="text-xl font-semibold text-fresh-green mb-4">Order via WhatsApp</h3>
+                        <p class="text-gray-600 mb-6">
+                            For faster service, send us a message on WhatsApp with your order details.
+                        </p>
+                        <button onclick="openWhatsApp()" class="bg-green-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-600 transition-colors flex items-center justify-center mx-auto space-x-2">
+                            <span>💬</span>
+                            <span>Chat on WhatsApp</span>
+                        </button>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <h3 class="text-xl font-semibold text-fresh-green mb-4">Contact Information</h3>
+                        <div class="space-y-3 text-gray-600">
+                            <p><strong>Business Hours:</strong> Mon - Sat, 8:00 AM - 6:00 PM</p>
+                            <p><strong>Delivery Areas:</strong> Lagos, Abuja, and surrounding areas</p>
+                            <p><strong>Minimum Order:</strong> ₦5,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-fresh-green text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-6">
+                    <!-- Replaced initial letter badge with real logo -->
+                    
+                    <span class="text-2xl font-semibold">Sa'adat's PurePantry</span>
+                </div>
+                <p class="text-lg mb-4 opacity-90">Bringing the market closer to you</p>
+                <p class="opacity-75">
+                    © 2025 Sa'adat's PurePantry. All rights reserved. | Fresh foodstuffs delivered with care.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your order request! We will contact you shortly to confirm your order and arrange delivery.');
+        }
+
+        function openWhatsApp() {
+            const message = "Hello Sa'adat's PurePantry! I'm interested in ordering some fresh foodstuffs. Could you please help me with the available products and prices?";
+            const whatsappUrl = `https://wa.me/2348000000000?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'972cd8bc13bdef40',t:'MTc1NTgwNzc4OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
