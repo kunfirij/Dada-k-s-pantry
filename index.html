@@ -32,12 +32,10 @@
     </style>
 </head>
 <body class="bg-white">
-    <!-- Navigation -->
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center space-x-3">
-                    <!-- Replaced initial letter badge with real logo -->
                     <span class="text-fresh-green font-semibold text-xl">Dada-k's Pantry</span>
                 </div>
                 <div class="hidden md:flex space-x-8">
@@ -50,42 +48,23 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="bg-gradient-to-br from-soft-beige to-white py-20 basket-pattern">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="text-center lg:text-left">
-                    <!-- Added logo near heading for brand recall on mobile -->
                     <h1 class="text-5xl lg:text-6xl font-bold text-fresh-green mb-6">
-                     <br>Dada-k's
-                        <span class="text-earth-brown">Pantry</span>
+                        <br>Dada-k's <span class="text-earth-brown">Pantry</span>
                     </h1>
-                    <p class="text-xl text-gray-600 mb-8 font-medium">
-                        Bringing the market closer to you
-                    </p>
-                    <p class="text-lg text-gray-500 mb-10 max-w-lg">
-                        Fresh, quality foodstuffs delivered with care. From premium rice and beans to essential cooking ingredients - we bring the best of the market to your doorstep.
-                    </p>
+                    <p class="text-xl text-gray-600 mb-8 font-medium">Bringing the market closer to you</p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" 
-                                class="bg-fresh-green text-white px-8 py-4 rounded-full font-semibold hover:bg-green-700 transition-colors shadow-lg">
-                            Order Now
-                        </button>
-                        <button onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})" 
-                                class="border-2 border-earth-brown text-earth-brown px-8 py-4 rounded-full font-semibold hover:bg-earth-brown hover:text-white transition-colors">
-                            View Products
-                        </button>
-                    </div>
-                </div>
-                <div class="flex justify-center">
-                    <div class="relative">
+                        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" class="bg-fresh-green text-white px-8 py-4 rounded-full font-semibold hover:bg-green-700 transition-colors shadow-lg">Order Now</button>
+                        <button onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})" class="border-2 border-earth-brown text-earth-brown px-8 py-4 rounded-full font-semibold hover:bg-earth-brown hover:text-white transition-colors">View Products</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Us Section -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -95,301 +74,190 @@
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                     <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                        At Dada-k's Pantry, we believe that quality food is the foundation of every great meal. Founded with a passion for bringing fresh, authentic foodstuffs directly from trusted sources to your kitchen.
-                    </p>
-                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                        We specialize in premium rice varieties, fresh beans, essential cooking oils, farm-fresh yams, and carefully selected spices. Every product is handpicked to ensure you receive only the finest quality ingredients.
+                        At Dada-k's Pantry, we believe that quality food is the foundation of every great meal. We specialize in premium rice varieties, fresh beans, essential cooking oils, and farm-fresh produce.
                     </p>
                     <p class="text-lg text-gray-600 leading-relaxed">
-                        Our mission is simple: to make quality foodstuffs accessible and convenient for busy professionals, families, and food enthusiasts who value freshness and authenticity.
+                        Our mission is simple: to make quality foodstuffs accessible and convenient for busy professionals and families who value freshness and authenticity.
                     </p>
                 </div>
                 <div class="bg-soft-beige rounded-3xl p-8 text-center">
                     <div class="text-6xl mb-4">🌾</div>
                     <h3 class="text-2xl font-semibold text-fresh-green mb-4">Our Promise</h3>
-                    <p class="text-gray-600">
-                        Fresh ingredients, fair prices, and reliable delivery. We're committed to bringing the best of the market directly to you with the care and quality you deserve.
-                    </p>
+                    <p class="text-gray-600">Fresh ingredients, fair prices, and reliable delivery. We bring the best of the market directly to you.</p>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Products Section -->
-<section id="products" class="py-20 bg-soft-beige">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold text-fresh-green mb-6">Our Fresh Products</h2>
-      <div class="w-24 h-1 bg-golden-yellow mx-auto mb-8"></div>
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-        Discover our carefully curated selection of premium foodstuffs, sourced fresh and delivered with care.
-      </p>
-    </div>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section id="products" class="py-20 bg-soft-beige">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-fresh-green mb-6">Our Fresh Products</h2>
+                <div class="w-24 h-1 bg-golden-yellow mx-auto mb-8"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                    <img src="https://media.istockphoto.com/id/1270226788/photo/close-up-rice-grain-basmati-rice-food-background-healthy-food.jpg?s=612x612&w=0&k=20&c=JbrA_uK07OmIePdE6w6xmi4eOVWEjZSHMF25yKPCCJM=" class="w-full h-48 object-cover rounded-t-2xl mb-4">
+                    <h3 class="text-xl font-semibold text-center mb-2">Premium Rice</h3>
+                    <p class="text-2xl font-bold text-fresh-green text-center mb-4">GH₵ 100</p>
+                    <button onclick="addToCart('Premium Rice', 100)" class="w-full bg-fresh-green text-white py-2 rounded-lg font-semibold hover:bg-earth-brown transition-all">Add to Cart</button>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                    <img src="https://i.ibb.co/4ZPRw1KY/seeds.jpg" class="w-full h-48 object-cover rounded-t-2xl mb-4">
+                    <h3 class="text-xl font-semibold text-center mb-2">Fresh Beans</h3>
+                    <p class="text-2xl font-bold text-fresh-green text-center mb-4">GH₵ 50</p>
+                    <button onclick="addToCart('Fresh Beans', 50)" class="w-full bg-fresh-green text-white py-2 rounded-lg font-semibold hover:bg-earth-brown transition-all">Add to Cart</button>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpPdBrX4K7vXFd6obhQ_Q4EN3QF8CzWS4p6SOtJHmUfEN4LXrH9qrRkscX_Xw3PeHUXNs&usqp=CAU" class="w-full h-48 object-cover rounded-t-2xl mb-4">
+                    <h3 class="text-xl font-semibold text-center mb-2">Cooking Oil</h3>
+                    <p class="text-2xl font-bold text-fresh-green text-center mb-4">GH₵ 60</p>
+                    <button onclick="addToCart('Cooking Oil', 60)" class="w-full bg-fresh-green text-white py-2 rounded-lg font-semibold hover:bg-earth-brown transition-all">Add to Cart</button>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHKZmx8yPUTBPP0yv7DCuFLQ9nQxuvvdkjNg&s" class="w-full h-48 object-cover rounded-t-2xl mb-4">
+                    <h3 class="text-xl font-semibold text-center mb-2">Fresh Yam</h3>
+                    <p class="text-2xl font-bold text-fresh-green text-center mb-4">GH₵ 50</p>
+                    <button onclick="addToCart('Fresh Yam', 50)" class="w-full bg-fresh-green text-white py-2 rounded-lg font-semibold hover:bg-earth-brown transition-all">Add to Cart</button>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_AWwX3DQKnnOq0t8r63BvVcAaJOGhNJ1thQ&s" class="w-full h-48 object-cover rounded-t-2xl mb-4">
+                    <h3 class="text-xl font-semibold text-center mb-2">Spices & Seasoning</h3>
+                    <p class="text-2xl font-bold text-fresh-green text-center mb-4">GH₵ 50</p>
+                    <button onclick="addToCart('Spices & Seasoning', 50)" class="w-full bg-fresh-green text-white py-2 rounded-lg font-semibold hover:bg-earth-brown transition-all">Add to Cart</button>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQedkiiN2X_xL38bJunfKi8G4o6lBdbVn716g&s" class="w-full h-48 object-cover rounded-t-2xl mb-4">
+                    <h3 class="text-xl font-semibold text-center mb-2">Whole Grains</h3>
+                    <p class="text-2xl font-bold text-fresh-green text-center mb-4">GH₵ 70</p>
+                    <button onclick="addToCart('Whole Grains', 70)" class="w-full bg-fresh-green text-white py-2 rounded-lg font-semibold hover:bg-earth-brown transition-all">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <!-- Rice -->
-      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-        <div class="mb-4 -mx-8 -mt-8">
-          <img src="https://media.istockphoto.com/id/1270226788/photo/close-up-rice-grain-basmati-rice-food-background-healthy-food.jpg?s=612x612&w=0&k=20&c=JbrA_uK07OmIePdE6w6xmi4eOVWEjZSHMF25yKPCCJM=" alt="Premium Rice" class="w-full h-48 object-cover rounded-t-2xl shadow-md">
-        </div>
-        <h3 class="text-xl font-semibold text-fresh-green mb-3 text-center">Premium Rice</h3>
-        <p class="text-gray-600 text-center mb-4">
-          Long grain, short grain, jasmine, and basmati rice varieties. Always fresh and properly stored.
-        </p>
-        <div class="text-center">
-          <span class="inline-block bg-golden-yellow text-white px-4 py-2 rounded-full text-sm font-medium">
-            Multiple Varieties
-          </span>
-        </div>
-      </div>
-
-      <!-- Beans -->
-      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-        <div class="mb-4 -mx-8 -mt-8">
-          <img src="https://i.ibb.co/4ZPRw1KY/seeds.jpg" alt="Fresh Beans" class="w-full h-48 object-cover rounded-t-2xl shadow-md">
-        </div>
-        <h3 class="text-xl font-semibold text-fresh-green mb-3 text-center">Fresh Beans</h3>
-        <p class="text-gray-600 text-center mb-4">
-          Black beans, brown beans, white beans, and kidney beans. Cleaned and ready for cooking.
-        </p>
-        <div class="text-center">
-          <span class="inline-block bg-earth-brown text-white px-4 py-2 rounded-full text-sm font-medium">
-            Farm Fresh
-          </span>
-        </div>
-      </div>
-
-      <!-- Cooking Oil -->
-      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-        <div class="mb-4 -mx-8 -mt-8">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpPdBrX4K7vXFd6obhQ_Q4EN3QF8CzWS4p6SOtJHmUfEN4LXrH9qrRkscX_Xw3PeHUXNs&usqp=CAU" alt="Cooking Oils" class="w-full h-48 object-cover rounded-t-2xl shadow-md">
-        </div>
-        <h3 class="text-xl font-semibold text-fresh-green mb-3 text-center">Cooking Oils</h3>
-        <p class="text-gray-600 text-center mb-4">
-          Palm oil, vegetable oil, groundnut oil, and olive oil. Pure and unrefined options available.
-        </p>
-        <div class="text-center">
-          <span class="inline-block bg-golden-yellow text-white px-4 py-2 rounded-full text-sm font-medium">
-            Pure Quality
-          </span>
-        </div>
-      </div>
-
-      <!-- Yam -->
-      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-        <div class="mb-4 -mx-8 -mt-8">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHKZmx8yPUTBPP0yv7DCuFLQ9nQxuvvdkjNg&s" alt="Fresh Yams" class="w-full h-48 object-cover rounded-t-2xl shadow-md">
-        </div>
-        <h3 class="text-xl font-semibold text-fresh-green mb-3 text-center">Fresh Yams</h3>
-        <p class="text-gray-600 text-center mb-4">
-          White yam, water yam, and sweet potatoes. Carefully selected for freshness and quality.
-        </p>
-        <div class="text-center">
-          <span class="inline-block bg-earth-brown text-white px-4 py-2 rounded-full text-sm font-medium">
-            Hand Selected
-          </span>
-        </div>
-      </div>
-
-      <!-- Spices -->
-      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-        <div class="mb-4 -mx-8 -mt-8">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_AWwX3DQKnnOq0t8r63BvVcAaJOGhNJ1thQ&s" alt="Spices & Seasonings" class="w-full h-48 object-cover rounded-t-2xl shadow-md">
-        </div>
-        <h3 class="text-xl font-semibold text-fresh-green mb-3 text-center">Spices & Seasonings</h3>
-        <p class="text-gray-600 text-center mb-4">
-          Pepper, ginger, garlic, curry, thyme, and traditional spice blends for authentic flavors.
-        </p>
-        <div class="text-center">
-          <span class="inline-block bg-golden-yellow text-white px-4 py-2 rounded-full text-sm font-medium">
-            Authentic Blends
-          </span>
-        </div>
-      </div>
-
-      <!-- Grains -->
-      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-        <div class="mb-4 -mx-8 -mt-8">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQedkiiN2X_xL38bJunfKi8G4o6lBdbVn716g&s" alt="Whole Grains" class="w-full h-48 object-cover rounded-t-2xl shadow-md">
-        </div>
-        <h3 class="text-xl font-semibold text-fresh-green mb-3 text-center">Whole Grains</h3>
-        <p class="text-gray-600 text-center mb-4">
-          Millet, sorghum, corn, and wheat. Nutritious whole grains for healthy, hearty meals.
-        </p>
-        <div class="text-center">
-          <span class="inline-block bg-earth-brown text-white px-4 py-2 rounded-full text-sm font-medium">
-            Nutrient Rich
-          </span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- Why Choose Us Section -->
     <section id="why-us" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-fresh-green mb-6">Why Choose Dada-k's Pantry?</h2>
+                <h2 class="text-4xl font-bold text-fresh-green mb-6">Why Choose Us?</h2>
                 <div class="w-24 h-1 bg-golden-yellow mx-auto mb-8"></div>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-soft-beige to-white">
-                    <div class="w-16 h-16 bg-fresh-green rounded-full flex items-center justify-center mx-auto mb-6">
-                        <span class="text-2xl">✓</span>
-                    </div>
-                    <h3 class="text-xl font-semibold text-fresh-green mb-4">Trusted Quality</h3>
-                    <p class="text-gray-600">
-                        Every product is carefully inspected and sourced from reliable suppliers. We guarantee freshness and quality in every order.
-                    </p>
+                <div class="text-center p-8 rounded-2xl bg-soft-beige">
+                    <div class="text-4xl mb-4">🚚</div>
+                    <h3 class="text-xl font-semibold text-fresh-green mb-2">Swift Delivery</h3>
+                    <p class="text-gray-600 text-sm">We get your foodstuffs to your doorstep while they are still fresh.</p>
                 </div>
-
-                <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-soft-beige to-white">
-                    <div class="w-16 h-16 bg-golden-yellow rounded-full flex items-center justify-center mx-auto mb-6">
-                        <span class="text-2xl">🚚</span>
-                    </div>
-                    <h3 class="text-xl font-semibold text-fresh-green mb-4">Convenient Delivery</h3>
-                    <p class="text-gray-600">
-                        Skip the market trips. We deliver fresh foodstuffs directly to your location, saving you time and effort.
-                    </p>
+                <div class="text-center p-8 rounded-2xl bg-soft-beige">
+                    <div class="text-4xl mb-4">💎</div>
+                    <h3 class="text-xl font-semibold text-fresh-green mb-2">Premium Quality</h3>
+                    <p class="text-gray-600 text-sm">Every item is hand-selected to ensure the highest standards.</p>
                 </div>
-
-                <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-soft-beige to-white">
-                    <div class="w-16 h-16 bg-earth-brown rounded-full flex items-center justify-center mx-auto mb-6">
-                        <span class="text-2xl">💰</span>
-                    </div>
-                    <h3 class="text-xl font-semibold text-fresh-green mb-4">Fair Pricing</h3>
-                    <p class="text-gray-600">
-                        Competitive prices without compromising quality. We believe good food should be accessible to everyone.
-                    </p>
+                <div class="text-center p-8 rounded-2xl bg-soft-beige">
+                    <div class="text-4xl mb-4">💰</div>
+                    <h3 class="text-xl font-semibold text-fresh-green mb-2">Fair Pricing</h3>
+                    <p class="text-gray-600 text-sm">Bringing the market prices closer to you without the stress.</p>
                 </div>
-            </div>
-
-            <div class="mt-16 bg-fresh-green rounded-3xl p-8 text-center text-white">
-                <h3 class="text-2xl font-semibold mb-4">Perfect for Busy Professionals</h3>
-                <p class="text-lg opacity-90 max-w-3xl mx-auto">
-                    Whether you're a busy colleague looking for quality ingredients or planning meals for the week, 
-                    Dada-k's Pantry makes it easy to access fresh, authentic foodstuffs without the hassle of market visits.
-                </p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <button onclick="toggleCart()" class="fixed bottom-6 right-6 bg-fresh-green text-white p-4 rounded-full shadow-2xl z-[60] hover:scale-110 transition-transform">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+        </svg>
+        <span id="cart-count" class="absolute -top-1 -right-1 bg-golden-yellow text-white text-xs font-bold px-2 py-1 rounded-full">0</span>
+    </button>
+
+    <div id="cart-sidebar" class="fixed inset-y-0 right-0 w-full sm:w-80 bg-white shadow-2xl z-[70] transform translate-x-full transition-transform duration-300 ease-in-out border-l border-gray-200">
+        <div class="p-6 h-full flex flex-col">
+            <div class="flex justify-between items-center mb-6 border-b pb-4">
+                <h2 class="text-xl font-bold text-fresh-green">Your Cart</h2>
+                <button onclick="toggleCart()" class="text-gray-400 hover:text-gray-600 text-3xl">&times;</button>
+            </div>
+            <div id="cart-items-list" class="flex-grow overflow-y-auto">
+                <p class="text-gray-500 text-center py-10">Empty.</p>
+            </div>
+            <div class="mt-auto pt-6">
+                <button onclick="toggleCart(); document.getElementById('contact').scrollIntoView();" class="w-full bg-fresh-green text-white py-3 rounded-lg font-bold">Checkout</button>
+            </div>
+        </div>
+    </div>
+
     <section id="contact" class="py-20 bg-soft-beige">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-fresh-green mb-6">Ready to Order?</h2>
-                <div class="w-24 h-1 bg-golden-yellow mx-auto mb-8"></div>
-                <p class="text-lg text-gray-600">
-                    Get in touch with us to place your order or ask any questions about our products.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-12">
-                <!-- Contact Form -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <h3 class="text-xl font-semibold text-fresh-green mb-6">Send us a message</h3>
-                    <form class="space-y-4" onsubmit="handleFormSubmit(event)">
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">Your Name</label>
-                            <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-fresh-green focus:border-transparent">
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">Phone Number</label>
-                            <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-fresh-green focus:border-transparent">
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">What would you like to order?</label>
-                            <textarea rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-fresh-green focus:border-transparent" placeholder="Please list the items and quantities you need..."></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-fresh-green text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
-                            Send Order Request
-                        </button>
-                    </form>
-                </div>
-
-                <!-- WhatsApp Contact -->
-                <div class="space-y-8">
-                    <div class="bg-white rounded-2xl p-8 shadow-lg text-center">
-                        <div class="text-4xl mb-4">📱</div>
-                        <h3 class="text-xl font-semibold text-fresh-green mb-4">Order via WhatsApp</h3>
-                        <p class="text-gray-600 mb-6">
-                            For faster service, send us a message on WhatsApp with your order details.
-                        </p>
-                        <button onclick="openWhatsApp()" class="bg-green-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-600 transition-colors flex items-center justify-center mx-auto space-x-2">
-                            <span>💬</span>
-                            <span>Chat on WhatsApp</span>
-                        </button>
-                    </div>
-
-                    <div class="bg-white rounded-2xl p-8 shadow-lg">
-                        <h3 class="text-xl font-semibold text-fresh-green mb-4">NOTE!!!</h3>
-                        <div class="space-y-3 text-gray-600">
-                            <p><strong>Business Hours:</strong> Monday - Saturday, 8:00 AM - 6:00 PM</p>
-                            <p><strong>Delivery Areas:</strong> Wa, Daffiama and surrounding areas</p>
-                            <p><strong>Minimum Order:</strong> GHs50.00</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold text-fresh-green mb-6 text-center">Place Your Order</h3>
+                <form class="space-y-4" onsubmit="handleFormSubmit(event)">
+                    <input type="text" id="cust-name" placeholder="Your Name" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-fresh-green">
+                    <select id="payment-method" required class="w-full px-4 py-3 border rounded-lg">
+                        <option value="" disabled selected>Payment Method</option>
+                        <option value="Mobile Money (MoMo)">Mobile Money (MoMo)</option>
+                        <option value="Cash on Delivery">Cash on Delivery</option>
+                    </select>
+                    <textarea id="order-details" rows="4" readonly class="w-full px-4 py-3 border rounded-lg bg-gray-50" placeholder="Order summary..."></textarea>
+                    <button type="submit" class="w-full bg-fresh-green text-white py-4 rounded-lg font-bold text-lg">Send via WhatsApp</button>
+                </form>
             </div>
         </div>
-
     </section>
 
-    <!-- Footer -->
     <footer class="bg-fresh-green text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <div class="flex items-center justify-center space-x-3 mb-6">
-                    <!-- Replaced initial letter badge with real logo -->
-                    
-                    <span class="text-2xl font-semibold">Dada-k's Pantry</span>
-                </div>
-                <p class="text-lg mb-4 opacity-90">Bringing the market closer to you</p>
-                <p class="opacity-75">
-                    © 2025 Dada-k's Pantry. All rights reserved. | Fresh foodstuffs delivered with care.
-                </p>
-            </div>
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-semibold mb-2">Dada-k's Pantry</h2>
+            <p class="opacity-75">© 2025 Dada-k's Pantry. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
+        let cart = [];
+        function toggleCart() {
+            const sidebar = document.getElementById('cart-sidebar');
+            if (sidebar) sidebar.classList.toggle('translate-x-full');
+        }
+        function addToCart(name, price) {
+            const item = cart.find(i => i.name === name);
+            if (item) { item.quantity += 1; } 
+            else { cart.push({ name, price, quantity: 1 }); }
+            renderCart();
+            toggleCart(); // Open when item added
+        }
+        function removeFromCart(name) {
+            cart = cart.filter(i => i.name !== name);
+            renderCart();
+        }
+        function renderCart() {
+            const list = document.getElementById('cart-items-list');
+            const count = document.getElementById('cart-count');
+            const summary = document.getElementById('order-details');
+            let total = 0;
+            count.innerText = cart.reduce((s, i) => s + i.quantity, 0);
+            if (cart.length === 0) {
+                list.innerHTML = '<p class="text-gray-500 text-center py-10">Empty.</p>';
+                if(summary) summary.value = "";
+                return;
+            }
+            list.innerHTML = cart.map(i => {
+                total += (i.price * i.quantity);
+                return `<div class="flex justify-between items-center bg-gray-50 p-3 rounded-lg mb-2">
+                    <div><span class="font-semibold">${i.name}</span><p class="text-xs">GH₵ ${i.price} x ${i.quantity}</p></div>
+                    <button onclick="removeFromCart('${i.name}')" class="text-red-500 font-bold px-2">&times;</button>
+                </div>`;
+            }).join('');
+            list.innerHTML += `<div class="mt-4 pt-4 border-t font-bold text-fresh-green flex justify-between"><span>Total:</span><span>GH₵ ${total}</span></div>`;
+            if(summary) summary.value = cart.map(i => `${i.name} (x${i.quantity})`).join(', ') + `. Total: GH₵ ${total}`;
+        }
         function handleFormSubmit(event) {
             event.preventDefault();
-            alert('Thank you for your order request! We will contact you shortly to confirm your order and arrange delivery.');
+            const name = document.getElementById('cust-name').value;
+            const payment = document.getElementById('payment-method').value;
+            const total = cart.reduce((s, i) => s + (i.price * i.quantity), 0);
+            let msg = `*NEW ORDER*%0A*Customer:* ${name}%0A*Payment:* ${payment}%0A%0A*Items:*%0A`;
+            cart.forEach(i => msg += `• ${i.name} (x${i.quantity})%0A`);
+            msg += `%0A*TOTAL: GH₵ ${total}*`;
+            window.open(`https://wa.me/+2330543326598?text=${msg}`, '_blank');
         }
-
-        function openWhatsApp() {
-            const message = "Hello Dada-k's Pantry! I'm interested in ordering some fresh foodstuffs. Could you please help me with the available products and prices?";
-            const whatsappUrl = `https://wa.me/+2330543326598?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank');
-        }
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
     </script>
+</body>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'972cd8bc13bdef40',t:'MTc1NTgwNzc4OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
-
-
-
-
-
-
-
-
